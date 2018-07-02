@@ -57,7 +57,7 @@ class App extends Component {
                 <div className="column is-5">
                   <figure className="image is-4by3">
                     <img
-                      src="https://lh3.googleusercontent.com/bBzIzCccr0P7Gc_pge_BHMZO9ja1NS2Y923n2wvPfbXvIGiAImm7tfOKHb_tV65XoEx_w5iHO9Kn7n7BA6VCaO22jIEaezllb_R_po_coWO_jenJKRpacG4fMQvgN_NJ7nlJMT4Axm1zFksi7ZrS8puMizaIph5O3yRYVG8JpxArtFxfF6ZYpMPGEL1WLzsmGE4hbUBoBq_C_uI1Gfz8myHkGnTx2O_BQg5tRMPJMeLeDucT6DdJZK43sqOhP5WPQQ3dcNAFDGaZtMYC_IE9aEBQkKuASOus9_Ml_YEX50lBFpIS3P1yCjtPNuh679FszpC3cb_i044F9CygIR1DglhdTYTDLvbesRpMwBG5PLv6G3bzJEgE8Zx11MAEP3uvAQ3j085cfdUmL9lmmLlrh-U-3PUOtSaCGHJMJBQJC5p7LMlf3XtUK23WX0h3CmU3RZmLQSB9yh2ErqlBa6sk3FCZX1-vZ0EqRc--VId-PsWW-mnknnBHQSSs_QUZOlumxLmp79l6GaAA1y7nVprI4g5OW8pBA19nIdeUmeh4jVtWX5QdQv64ORNSHavd3VLsndrpwWRX8X95cLRPzr_N22yWpZfqJ2AJRhQV_aI=w1242-h993-no"
+                      src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a20bc6324f6ef2969d9a7cae56b8d4d1&auto=format&fit=crop&w=1350&q=80"
                       alt="Description"
                     />
                   </figure>
@@ -71,7 +71,7 @@ class App extends Component {
                       <span className="icon">
                         <i className="fa fa-github" />
                       </span>
-                    </a>. Soon I will publish non-digital records on{' '}
+                    </a>. Soon I will publish me notes about React  on{' '}
                     <a className="" href="https://medium.com/@roma.kuzmenko21" target="_blank">
                       <span>Medium</span>
                       <span className="icon">
