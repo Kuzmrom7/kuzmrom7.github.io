@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import Card from './Card';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0,
+    };
+  }
   render() {
     return (
       <div className="App">
@@ -62,7 +68,9 @@ class App extends Component {
                   </figure>
                 </div>
                 <div className="column is-6 is-offset-1">
-                  <h1 className="title is-2">Хэй! </h1>
+                  <h1 className="title is-2">
+                    Хэй! {this.state.count >= 5 ? 'Отлично! 🍕' : null}{' '}
+                  </h1>
                   <h2 className="subtitle is-4">
                     Меня зовут Рома Кузьменко. Я веб-разработчик. Ты можешь посмотреть мои проекты
                     на {''}
@@ -82,7 +90,11 @@ class App extends Component {
                   </h2>
                   <br />
                   <p className="has-text-centered">
-                    <a className="button is-success ">&#x1F354;</a>
+                    <a
+                      className="button is-success "
+                      onClick={() => this.setState({ count: this.state.count + 1 })}>
+                      &#x1F354; + {this.state.count === 0 ? 'покормить' : this.state.count}
+                    </a>
                   </p>
                 </div>
                 {/*          <div className="columns is-vcentered">
