@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-
+import Card from './Card';
 
 class App extends Component {
   render() {
@@ -38,7 +37,7 @@ class App extends Component {
                     <span className="navbar-item">
                       <a
                         className="button is-danger is-inverted"
-                        href="https://www.instagram.com/kuzmenko.rk/"
+                        href="https://www.instagram.com/roma.kuzmenko"
                         target="_blank">
                         <span>Follow me</span>
                         <span className="icon">
@@ -63,42 +62,59 @@ class App extends Component {
                   </figure>
                 </div>
                 <div className="column is-6 is-offset-1">
-                  <h1 className="title is-2">Hello everyone!</h1>
+                  <h1 className="title is-2">Хэй! </h1>
                   <h2 className="subtitle is-4">
-                    My name is Roman Kuzmenko. I'm web-developer. You can see my projects on{' '}
+                    Меня зовут Рома Кузьменко. Я веб-разработчик. Ты можешь посмотреть мои проекты
+                    на {''}
                     <a className="" href="https://github.com/Kuzmrom7" target="_blank">
                       <span>GitHub</span>
                       <span className="icon">
                         <i className="fa fa-github" />
                       </span>
-                    </a>. Soon I will publish me notes about React  on{' '}
+                    </a>
+                    {/*. Soon I will publish me notes about React on{' '}
                     <a className="" href="https://medium.com/@roma.kuzmenko21" target="_blank">
                       <span>Medium</span>
                       <span className="icon">
                         <i className="fab fa-medium" />
                       </span>
-                    </a>
+                    </a>*/}
                   </h2>
                   <br />
                   <p className="has-text-centered">
                     <a className="button is-success ">&#x1F354;</a>
                   </p>
                 </div>
+                {/*          <div className="columns is-vcentered">
+                  <Card />
+                </div>*/}
               </div>
             </div>
           </div>
 
-          {/*          <div className="hero-foot">
-            <div className="container">
-              <div className="tabs is-centered">
-                <ul>
-                  <li>
-                    <a>And this is the bottom</a>
-                  </li>
-                </ul>
+          <div className="container has-text-centered">
+            <section className="hero is-light is-medium">
+              <h1 className="title" style={{ marginTop: '5px' }}>
+                Записи
+              </h1>
+              <div className="hero-body ">
+                <div className="columns is-vcentered">
+                  <section className="section">
+                    <div className="container">
+                      <div className="columns">
+                        <div className="column">
+                          <a name="posts" />
+                          <Card />
+                        </div>
+                        <div className="column" />
+                        <div className="column" />
+                      </div>
+                    </div>
+                  </section>
+                </div>
               </div>
-            </div>
-          </div>*/}
+            </section>
+          </div>
         </section>
       </div>
     );
