@@ -60,12 +60,10 @@ class App extends Component {
             <div className="container has-text-centered">
               <div className="columns is-vcentered">
                 <div className="column is-5">
-                  <figure className="image is-4by3">
-                    <img
-                      src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a20bc6324f6ef2969d9a7cae56b8d4d1&auto=format&fit=crop&w=1350&q=80"
-                      alt="Description"
-                    />
-                  </figure>
+                  <img
+                    src="http://beta.futumarket.ru:9000/read-only/images/0176204d-5c17-457c-bc4b-ca8dfdbe7dd3/400x540.jpg"
+                    alt="Description"
+                  />
                 </div>
                 <div className="column is-6 is-offset-1">
                   <h1 className="title is-2">
@@ -91,19 +89,17 @@ class App extends Component {
                   <br />
                   <p className="has-text-centered">
                     <a
-                      className="button is-success "
-                      onClick={() => this.setState({ count: this.state.count + 1 })}>
-                      &#x1F354; + {this.state.count === 0 ? 'покормить' : this.state.count}
+                      className="button is-success"
+                      target="_blank"
+                      href="https://t.me/RomanKuzmenko">
+                      &#x1F354; Написать мне
                     </a>
                   </p>
                 </div>
-                {/*          <div className="columns is-vcentered">
-                  <Card />
-                </div>*/}
               </div>
             </div>
           </div>
-
+          {/*
           <div className="container has-text-centered">
             <section className="hero is-light is-medium">
               <h1 className="title" style={{ marginTop: '5px' }}>
@@ -126,7 +122,7 @@ class App extends Component {
                 </div>
               </div>
             </section>
-          </div>
+          </div>*/}
         </section>
       </div>
     );
