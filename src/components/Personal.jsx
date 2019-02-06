@@ -60,7 +60,7 @@ const Personal = _ => (
               className="button  is-info is-outlined is-large"
               target="_blank"
               href="https://russia-trains.herokuapp.com/">
-              <i class="fab fa-train" /> &nbsp;Напиши мне
+              <i class="fab fa-telegram" /> &nbsp;Напиши мне
             </a>
           </p>
         </div>
