@@ -4,8 +4,10 @@
   "private": true,
   "homepage": "http://kuzmrom7.github.io",
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4"
   },
   "scripts": {
