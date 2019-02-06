@@ -63,6 +63,12 @@ class Stat extends Component {
     return (
       <div className="hero-body">
         <div className="container has-text-centered">
+          <h1 class="title is-1">
+            Количество КМ на{' '}
+            <a className="" href="https://futumarket.com/companies" target="_blank">
+              Футумаркете
+            </a>
+          </h1>
           <Table {...this.state} />
         </div>
       </div>
