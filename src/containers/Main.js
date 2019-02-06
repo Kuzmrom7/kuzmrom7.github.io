@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Header from '../components/Header';
 import Personal from '../components/Personal';
 
 class Main extends Component {

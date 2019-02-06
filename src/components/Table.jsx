@@ -1,4 +1,5 @@
 import React from 'react';
+import Spinner from './Spiner';
 
 const Table = ({
   companies,
@@ -25,21 +26,25 @@ const Table = ({
           <th>Событий</th>
           <th>Резюме</th>
           <th>Вакансий</th>
-          <th>Недвижомостей</th>
+          <th>Недвижимостей</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th>{companies}</th>
-          <th>{products}</th>
-          <th>{goods}</th>
-          <th>{rents}</th>
-          <th>{used}</th>
-          <th>{services}</th>
-          <th>{events}</th>
-          <th>{resumes}</th>
-          <th>{vacancies}</th>
-          <th>{realty}</th>
+          <th className="has-text-primary	 is-size-2">
+            {companies === '' ? <Spinner /> : companies}
+          </th>
+          <th className="has-text-primary	 is-size-2">{products === '' ? <Spinner /> : products}</th>
+          <th className="has-text-primary	 is-size-2">{goods === '' ? <Spinner /> : goods}</th>
+          <th className="has-text-primary	 is-size-2">{rents === '' ? <Spinner /> : rents}</th>
+          <th className="has-text-primary	 is-size-2">{used === '' ? <Spinner /> : used}</th>
+          <th className="has-text-primary	 is-size-2">{services === '' ? <Spinner /> : services}</th>
+          <th className="has-text-primary	 is-size-2">{events === '' ? <Spinner /> : events}</th>
+          <th className="has-text-primary	 is-size-2">{resumes === '' ? <Spinner /> : resumes}</th>
+          <th className="has-text-primary	 is-size-2">
+            {vacancies === '' ? <Spinner /> : vacancies}
+          </th>
+          <th className="has-text-primary	 is-size-2">{realty === '' ? <Spinner /> : realty}</th>
         </tr>
       </tbody>
     </table>
