@@ -1,5 +1,6 @@
 import React from 'react';
 import Spinner from './Spiner';
+import '../App.css';
 
 const Table = ({
   companies,
@@ -34,17 +35,33 @@ const Table = ({
           <th className="has-text-primary	 is-size-2">
             {companies === '' ? <Spinner /> : companies}
           </th>
-          <th className="has-text-primary	 is-size-2">{products === '' ? <Spinner /> : products}</th>
-          <th className="has-text-primary	 is-size-2">{goods === '' ? <Spinner /> : goods}</th>
-          <th className="has-text-primary	 is-size-2">{rents === '' ? <Spinner /> : rents}</th>
-          <th className="has-text-primary	 is-size-2">{used === '' ? <Spinner /> : used}</th>
-          <th className="has-text-primary	 is-size-2">{services === '' ? <Spinner /> : services}</th>
-          <th className="has-text-primary	 is-size-2">{events === '' ? <Spinner /> : events}</th>
-          <th className="has-text-primary	 is-size-2">{resumes === '' ? <Spinner /> : resumes}</th>
-          <th className="has-text-primary	 is-size-2">
+          <th className="has-text-primary	 is-size-2 content-centered">
+            {products === '' ? <Spinner /> : products}
+          </th>
+          <th className="has-text-primary	 is-size-2 content-centered">
+            {goods === '' ? <Spinner /> : goods}
+          </th>
+          <th className="has-text-primary	 is-size-2 content-centered">
+            {rents === '' ? <Spinner /> : rents}
+          </th>
+          <th className="has-text-primary	 is-size-2 content-centered">
+            {used === '' ? <Spinner /> : used}
+          </th>
+          <th className="has-text-primary	 is-size-2 content-centered">
+            {services === '' ? <Spinner /> : services}
+          </th>
+          <th className="has-text-primary	 is-size-2 content-centered">
+            {events === '' ? <Spinner /> : events}
+          </th>
+          <th className="has-text-primary	 is-size-2 content-centered">
+            {resumes === '' ? <Spinner /> : resumes}
+          </th>
+          <th className="has-text-primary	 is-size-2 content-centered">
             {vacancies === '' ? <Spinner /> : vacancies}
           </th>
-          <th className="has-text-primary	 is-size-2">{realty === '' ? <Spinner /> : realty}</th>
+          <th className="has-text-primary	 is-size-2  content-centered">
+            {realty === '' ? <Spinner /> : realty}
+          </th>
         </tr>
       </tbody>
     </table>

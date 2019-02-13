@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Table from '../components/Table';
 import axios from 'axios';
+import '../App.css';
 
 class Stat extends Component {
   constructor(props) {
@@ -61,7 +62,7 @@ class Stat extends Component {
   }
   render() {
     return (
-      <div className="hero-body">
+      <div className="hero-body flex">
         <div className="container has-text-centered">
           <h1 class="title is-1">
             Количество КМ на{' '}
