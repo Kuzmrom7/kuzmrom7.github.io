@@ -14,6 +14,16 @@ const initialState = {
   resumes: '',
   vacancies: '',
   realty: '',
+  diffCompanies: '',
+  diffProducts: '',
+  diffGoods: '',
+  diffUsed: '',
+  diffRents: '',
+  diffServices: '',
+  diffEvents: '',
+  diffResumes: '',
+  diffVacancies: '',
+  diffRealty: '',
 };
 
 class Stat extends Component {
@@ -21,10 +31,12 @@ class Stat extends Component {
     super(props);
     this.state = initialState;
     this.loadData = this.loadData.bind(this);
+    this.diffData = this.diffData.bind(this);
   }
   async componentDidMount() {
     try {
       await this.loadData();
+      await window.localStorage.setItem('state', JSON.stringify(this.state));
       setInterval(this.loadData, 20000);
     } catch (e) {
       console.log('error', e);
@@ -71,6 +83,60 @@ class Stat extends Component {
     await axios
       .get('https://futumarket.com:7000/realty?')
       .then(({ data }) => this.setState({ realty: data.total }));
+
+    await this.diffData();
+  }
+
+  async diffData() {
+    const storageState = JSON.parse(window.localStorage.getItem('state'));
+    const diffCompanies = this.state.companies - storageState.companies,
+      diffProducts = this.state.products - storageState.products,
+      diffGoods = this.state.goods - storageState.goods,
+      diffUsed = this.state.used - storageState.used,
+      diffRents = this.state.rents - storageState.rents,
+      diffServices = this.state.services - storageState.services,
+      diffEvents = this.state.events - storageState.events,
+      diffResumes = this.state.resumes - storageState.resumes,
+      diffVacancies = this.state.vacancies - storageState.vacancies,
+      diffRealty = this.state.realty - storageState.realty;
+
+    if (diffCompanies > 0) {
+      this.setState({ diffCompanies: diffCompanies });
+    }
+
+    if (diffProducts > 0) {
+      this.setState({ diffProducts: diffProducts });
+    }
+
+    if (diffGoods > 0) {
+      this.setState({ diffGoods: diffGoods });
+    }
+
+    if (diffUsed > 0) {
+      this.setState({ diffUsed: diffUsed });
+    }
+    if (diffRents > 0) {
+      this.setState({ diffRents: diffRents });
+    }
+    if (diffServices > 0) {
+      this.setState({ diffServices: diffServices });
+    }
+
+    if (diffEvents > 0) {
+      this.setState({ diffEvents: diffEvents });
+    }
+
+    if (diffResumes > 0) {
+      this.setState({ diffResumes: diffResumes });
+    }
+
+    if (diffVacancies > 0) {
+      this.setState({ diffVacancies: diffVacancies });
+    }
+
+    if (diffRealty > 0) {
+      this.setState({ diffRealty: diffRealty });
+    }
   }
   render() {
     return (

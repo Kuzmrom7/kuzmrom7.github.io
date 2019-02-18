@@ -6,3 +6,8 @@
 .content-centered {
   text-align: center;
 }
+
+.text-red {
+  color: red;
+  font-size: 50%;
+}
