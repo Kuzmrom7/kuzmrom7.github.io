@@ -36,7 +36,7 @@ class Stat extends Component {
   async componentDidMount() {
     try {
       await this.loadData();
-      await window.localStorage.setItem('state', JSON.stringify(this.state));
+      await localStorage.setItem('state', JSON.stringify(this.state));
       setInterval(this.loadData, 20000);
     } catch (e) {
       console.log('error', e);
@@ -88,7 +88,7 @@ class Stat extends Component {
   }
 
   async diffData() {
-    const storageState = JSON.parse(window.localStorage.getItem('state'));
+    const storageState = JSON.parse(localStorage.getItem('state'));
     const diffCompanies = this.state.companies - storageState.companies,
       diffProducts = this.state.products - storageState.products,
       diffGoods = this.state.goods - storageState.goods,
