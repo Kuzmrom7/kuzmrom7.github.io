@@ -1,13 +1,15 @@
-.flex {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-.content-centered {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+* {
+  font-family: 'Roboto Mono', monospace;
 }
 
-.text-red {
-  color: red;
-  font-size: 50%;
+.wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.about {
+  margin-bottom: 44px;
 }

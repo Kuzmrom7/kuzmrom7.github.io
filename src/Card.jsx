@@ -2,14 +2,6 @@ import React from 'react';
 
 const Card = () => (
   <div className="card">
-    {/*    <div className="card-image">
-      <figure className="image is-1by1">
-        <img
-          src="https://i.pinimg.com/originals/93/d3/e3/93d3e31639a4d07613de9dccdc8bd5e8.png"
-          alt="Placeholder image"
-        />
-      </figure>
-    </div>*/}
     <div className="card-content">
       <div className="media">
         <div className="media-left">
@@ -41,7 +33,8 @@ const Card = () => (
       <p className="card-footer-item">
         <span>
           <a href="https://t.me/frontend_junior" target="_blank">
-            Подписаться на канал Telegram<i className="fab fa-telegram" />
+            Подписаться на канал Telegram
+            <i className="fab fa-telegram" />
           </a>
         </span>
       </p>
