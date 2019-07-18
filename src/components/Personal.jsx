@@ -1,56 +1,97 @@
 import React from 'react';
 
+const projectList = [
+  {
+    name: 'Futumarket',
+    link: 'https://futumarket.com',
+  },
+  {
+    name: 'ABA-AVA',
+    link: 'https://aba-ava.com',
+  },
+  {
+    name: 'LastBackend',
+    link: 'https://lastbackend.com',
+  },
+];
+
+const myProject = [
+  {
+    name: 'Trains',
+    link: 'https://russia-trains.herokuapp.com',
+  },
+];
+
 const Personal = _ => (
   <div className="about">
-    <h2>
-      Меня зовут Рома Кузьменко. Я front-end разработчик. Живу в Санкт-Петербурге. Работаю в{' '}
-      <a
-        href="https://futumarket.com"
-        target="_blank"
-        style={{ textDecoration: 'line-through' }}
-        rel="noopener noreferrer">
-        Футумаркете
-      </a>
-      &nbsp;Dostaевском. Пишу на JavaScript, нравится ReactJS и NodeJS.
-    </h2>
-
-    <p className="has-text-centered">
-      Проекты, в которых принял участие: <br />
-      <a href="https://futumarket.com/" target="_blank" rel="noopener noreferrer">
-        <span>Futumarket</span>
-      </a>
-      <a href="https://russia-trains.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-        <span>Trains</span>
-      </a>
-      <a href="https://aba-ava.com/" target="_blank" rel="noopener noreferrer">
-        <span>ABA-AVA</span>
-      </a>
-      <a href="https://lastbackend.com/" target="_blank" rel="noopener noreferrer">
-        <span>LastBackend</span>
-      </a>
-    </p>
+    <h2>Привет!</h2>
+    Меня зовут <span className="text-name">Рома Кузьменко.</span> Я front-end разработчик. Живу в
+    Санкт-Петербурге. Работаю в &nbsp;Dostaевском. Пишу на JavaScript, нравится ReactJS и NodeJS.
+    <br />
+    <div>
+      <h4 className="text-underline"> Проекты, в которых принял участие:</h4>
+    </div>
+    <div className="project-list">
+      {projectList.map((item, index) => (
+        <div className="btn">
+          <a key={index} href={item.link} target="_blank" rel="noopener noreferrer">
+            <span>{item.name}</span>
+          </a>
+        </div>
+      ))}
+    </div>
     <br />
     <p>
-      Соцсети:
-      <br />
-      <a href="https://github.com/Kuzmrom7" target="_blank" rel="noopener noreferrer">
-        <span>Go for</span>
-        <span>
-          <i />
-        </span>
-      </a>
-      <a href="https://www.instagram.com/roma.kuzmenko" target="_blank" rel="noopener noreferrer">
-        <span>Follow me</span>
-        <span>
-          <i />
-        </span>
-      </a>
-    </p>
+      <div>
+        <h4 className="text-underline__mod"> Мои проекты: </h4>
+      </div>
 
+      <div className="project-list">
+        {myProject.map((item, index) => (
+          <div className="btn-my">
+            <a key={index} href={item.link} target="_blank" rel="noopener noreferrer">
+              <div className="text">{item.name}</div>
+            </a>
+          </div>
+        ))}
+      </div>
+    </p>
+    <p>
+      <h4 className="text-underline__net"> Соцсети: </h4>
+
+      <br />
+      <div className="project-list">
+        <div className="btn-net">
+          <a href="https://github.com/Kuzmrom7" target="_blank" rel="noopener noreferrer">
+            <span className="text-net">
+              Go for <i className="fab fa-github" />
+            </span>
+          </a>
+        </div>
+        <div className="btn-net">
+          <a
+            href="https://www.instagram.com/roma.kuzmenko"
+            target="_blank"
+            rel="noopener noreferrer">
+            <span className="text-net">
+              Follow me <i className="fab fa-instagram" />
+            </span>
+          </a>
+        </div>
+
+        <div className="btn-net">
+          <a href="https://twitter.com/kuzmrom7" target="_blank" rel="noopener noreferrer">
+            <span className="text-net">
+              Twiiter <i className="fab fa-twitter" />
+            </span>
+          </a>
+        </div>
+      </div>
+    </p>
     <br />
     <p>
       <a target="_blank" rel="noopener noreferrer" href="https://t.me/RomanKuzmenko">
-        <i className="fab fa-telegram" /> &nbsp;Напиши мне
+        <i className="fab fa-telegram" /> Спроси меня
       </a>
     </p>
   </div>
