@@ -11,6 +11,14 @@
   padding: 0 32px;
 }
 
+
+@media (max-width: 1199px){
+  .wrap {
+    padding: 0 16px;
+  }
+}
+
+
 .about {
   margin-bottom: 44px;
   line-height: 25px;
@@ -30,6 +38,20 @@
 
 .btn:hover {
   box-shadow: 3px 4px 0px #4e57ef;
+}
+
+@media (max-width: 1199px){
+  .btn {
+    box-shadow: 3px 4px 0px #4e57ef;
+  }
+
+  .btn-my{
+    box-shadow: 3px 4px 0px rgb(116, 168, 63);
+  }
+
+  .btn-net{
+    box-shadow: 3px 4px 0px rgb(80, 82, 78);
+  }
 }
 
 .btn-my {
@@ -79,6 +101,15 @@
 .project-list {
   display: flex;
 }
+
+@media (max-width: 768px) {
+  .project-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
 .project-list div {
   margin: 5px;

@@ -1,26 +1,5 @@
 import React from 'react';
-
-const projectList = [
-  {
-    name: 'Futumarket',
-    link: 'https://futumarket.com',
-  },
-  {
-    name: 'ABA-AVA',
-    link: 'https://aba-ava.com',
-  },
-  {
-    name: 'LastBackend',
-    link: 'https://lastbackend.com',
-  },
-];
-
-const myProject = [
-  {
-    name: 'Trains',
-    link: 'https://russia-trains.herokuapp.com',
-  },
-];
+import { projectList, myProject } from '../data';
 
 const Personal = _ => (
   <div className="about">
@@ -82,7 +61,7 @@ const Personal = _ => (
         <div className="btn-net">
           <a href="https://twitter.com/kuzmrom7" target="_blank" rel="noopener noreferrer">
             <span className="text-net">
-              Twiiter <i className="fab fa-twitter" />
+              Twitter <i className="fab fa-twitter" />
             </span>
           </a>
         </div>
