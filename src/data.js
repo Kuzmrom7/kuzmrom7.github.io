@@ -24,7 +24,7 @@ const myProject = [
     link: 'https://github.com/Kuzmrom7/film-app',
   },
   {
-    name: 'Weather Spot',
+    name: 'Weather',
     link: 'https://kuzmrom7.github.io/weather-spot',
   },
   {
