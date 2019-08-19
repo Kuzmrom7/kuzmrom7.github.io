@@ -4,8 +4,10 @@ import { projectList, myProject } from '../data';
 const Personal = _ => (
   <div className="about">
     <h2>Привет!</h2>
-    Меня зовут <span className="text-name">Рома Кузьменко.</span> Я front-end разработчик. Живу в
-    Санкт-Петербурге. Работаю в &nbsp;Dostaевском. Пишу на JavaScript, нравится ReactJS и NodeJS.
+    Меня зовут <span className="text-name">Рома Кузьменко.</span> Я Frontend-разработчик. Живу в
+    Санкт-Петербурге. Работаю в &nbsp;Dostaевском. Основной язык программирования -{' '}
+    <span className="text-name">JavaScript ❤️</span>.&nbsp; Люблю React ⚛, иногда пишу несложный
+    backend на NodeJS.
     <br />
     <div>
       <h4 className="text-underline"> Проекты, в которых принял участие:</h4>
