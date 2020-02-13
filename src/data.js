@@ -1,5 +1,6 @@
 const projectList = [
-  { name: 'Dostaевский', link: 'https://www.dostaevsky.ru/' },
+  { name: 'DostaMarket', link: 'https://dostamerket.ru/' },
+  { name: 'DostaЕвский', link: 'https://www.dostaevsky.ru/' },
   {
     name: 'Futumarket',
     link: 'https://futumarket.com',
