@@ -85,15 +85,15 @@ a:visited {
   box-shadow: 3px 4px 0px rgb(80, 82, 78);
 }
 
-.btn > a {
+.btn>a {
   text-decoration: none;
 }
 
-.btn-my > a {
+.btn-my>a {
   text-decoration: none;
 }
 
-.btn-net > a {
+.btn-net>a {
   text-decoration: none;
 }
 
@@ -159,4 +159,18 @@ a {
 
 .menu {
   margin-top: 10px;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  animation: slideInLeft 0.7s;
 }

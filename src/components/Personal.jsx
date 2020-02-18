@@ -3,6 +3,11 @@ import { projectList, myProject } from '../data';
 
 function Personal() {
   const [showProjects, setShowProjects] = useState(false);
+  const [animation] = useState('slideInLeft');
+
+  const handleClick = e => {
+    setShowProjects(!showProjects);
+  };
 
   return (
     <div className="about">
@@ -22,20 +27,20 @@ function Personal() {
             Посмотреть резюме
           </a>
         </div>
-        <div className="text-cv" onClick={() => setShowProjects(!showProjects)}>
+        <div className="text-cv" onClick={handleClick}>
           Посмотреть проекты
         </div>
       </div>
       <br />
       {showProjects && (
-        <>
+        <div className={animation}>
           <div>
             <h4>Проекты, в которых принял участие</h4>
           </div>
           <div className="project-list">
             {projectList.map((item, index) => (
-              <div className="btn">
-                <a key={index} href={item.link} target="_blank" rel="noopener noreferrer">
+              <div key={index} className="btn">
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
                   <span>{item.name}</span>
                 </a>
               </div>
@@ -47,8 +52,8 @@ function Personal() {
           </div>
           <div className="project-list">
             {myProject.map((item, index) => (
-              <div className="btn-my">
-                <a key={index} href={item.link} target="_blank" rel="noopener noreferrer">
+              <div key={index} className="btn-my">
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
                   <div className="text">{item.name}</div>
                 </a>
               </div>
@@ -86,7 +91,7 @@ function Personal() {
             </div>
           </p>
           <br />
-        </>
+        </div>
       )}
       <p>
         <a target="_blank" rel="noopener noreferrer" href="https://teleg.run/RomanKuzmenko">
