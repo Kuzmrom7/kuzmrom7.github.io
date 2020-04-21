@@ -1,6 +1,6 @@
 const projectList = [
-  { name: 'DostaMarket', link: 'https://dostamerket.ru/' },
-  { name: 'DostaЕвский', link: 'https://www.dostaevsky.ru/' },
+  { name: 'Dostamarket', link: 'https://vc.ru/food/102450-peterburgskiy-servis-dostavki-edy-dostaevskiy-zamorozit-proekt-po-ekspress-dostavke-produktov-dostamarket' },
+  { name: 'Dostaевский', link: 'https://www.dostaevsky.ru/' },
   {
     name: 'Futumarket',
     link: 'https://futumarket.com',

@@ -1,7 +1,6 @@
 import React from 'react';
-import Personal from '../components/Personal';
-
-import '../App.css';
+import Personal from './Personal';
+import './style.css';
 
 function App() {
   return (
