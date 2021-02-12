@@ -1,8 +1,13 @@
-import React from 'react';
-import Personal from './Personal';
+import React, { Suspense } from 'react';
+
+const Personal = React.lazy(() => import('./Personal'));
 
 function App() {
-  return <Personal />;
+  return (
+    <Suspense fallback={<div></div>}>
+      <Personal />
+    </Suspense>
+  );
 }
 
 export default App;

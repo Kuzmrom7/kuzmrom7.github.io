@@ -30,6 +30,10 @@ const data = {
   ],
   projectList: [
     {
+      name: 'Bot-generator',
+      link: 'https://github.com/Kuzmrom7/bot-generator',
+    },
+    {
       name: 'Aviasales-test',
       link: 'https://github.com/Kuzmrom7/aviasales-test',
     },
