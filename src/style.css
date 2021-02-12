@@ -1,12 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
-* {
-  font-family: 'Roboto Mono', monospace;
-}
-
-a:visited {
-  color: black;
-}
-
 .wrap {
   display: flex;
   max-width: 800px;
@@ -22,7 +13,6 @@ a:visited {
 
 .about {
   margin-bottom: 44px;
-  line-height: 25px;
 }
 
 .text {
@@ -33,65 +23,47 @@ a:visited {
   color: rgb(80, 82, 78);
 }
 
-.text-underline {
-  width: 21em;
-  padding-bottom: 4px;
-  border-bottom: 4px solid black;
-}
-
-.text-underline__mod {
-  width: 8em;
-  padding-bottom: 4px;
-  border-bottom: 4px solid black;
-}
-
-.text-underline__net {
-  width: 5em;
-  padding-bottom: 4px;
-  border-bottom: 4px solid black;
-}
-
-.text-name {
-  width: 21em;
-  border-bottom: 4px solid black;
-}
-
 .text-cv {
   cursor: pointer;
   padding: 10px;
   width: 11em;
   border-bottom: 4px solid red;
-}
-
-a {
-  cursor: pointer;
-  text-decoration: none;
+  width: 12em;
 }
 
 .menu {
   margin-top: 10px;
 }
 
-.photo {
-  display: block;
-  width: 80px;
-  pointer-events: none;
+.title {
+  width: 21em;
+  border-bottom: 4px solid black;
 }
 
 .description {
   line-height: 2.2;
 }
 
-.flex-container {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
 @media (max-width: 768px) {
-  .flex-container {
+  .container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+.container-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container-item > h4 {
+  margin-bottom: 0;
 }
