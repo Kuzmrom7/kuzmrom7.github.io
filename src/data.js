@@ -1,4 +1,8 @@
 const projectList = [
+  {
+    name: 'Sellerly',
+    link: 'https://sellerly.com',
+  },
   { name: 'Dostamarket', link: 'https://vc.ru/food/102450-peterburgskiy-servis-dostavki-edy-dostaevskiy-zamorozit-proekt-po-ekspress-dostavke-produktov-dostamarket' },
   { name: 'Dostaевский', link: 'https://www.dostaevsky.ru/' },
   {
